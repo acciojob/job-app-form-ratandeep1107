@@ -1,61 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-
+	<title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	
 	<section>
-		<form action="#" method="post">
-			<div>
-				<label for="#name">Name</label>
-				<input type="text" id="#name">
-			</div>
-			<div>
-				<label for="#email">Email</label>
-				<input type="email" id="#email">
-			</div>
-			<div>
-				<label for="#password">Password</label>
-				<input type="password" id="#password">
-			</div>
-			<div>
-				<label for="gender">Gender</label>
-				<input type="radio" name="gender" value="male">Female
-				<input type="radio" name="gender" value="female">Male
-			</div>
-			<div>
-				<label for="laptop">Laptop Brands</label>
-				<select  id="laptop"> 
-					<option value="Apple">Apple</option>
-					<option value="Asus">Asus</option>
-					<option value="HP">HP</option>
-				</select>
-			</div>
-			<div>
-				<label for="#age">Age</label>
-				<input type="number" id="#age">
-			</div>
-			<div>
-				<label for="#dob">DOB</label>
-				<input type="date" id="#dob">
-			</div>
-			<div>
-				<label for="portfolio">Portfolio URL
-					<input type="url" id="portfolio">
-				</label>
-			</div>
-			<div>
-				<button type="submit" id="submit">Submit</button>
-			</div>
-		</form>
+		<form action="/submit-form.php" method="POST">
+			<label for="name">Name*</label>
+			<input type="text" name="name" id="name" required>
+			<br>
+		  
+			<label for="email">Email*</label>
+			<input type="email" name="email" id="email" required>
+			<br>
+		  
+			<label>Gender*</label>
+			<br>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="male" required>
+		  
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="female" required>
+		  
+			<label for="non-binary">Non-binary</label>
+			<input type="radio" name="gender" id="non-binary" value="non-binary" required>
+			<br>
+		  
+			<label for="laptop">Laptop Brands</label>
+			<select name="laptop" id="laptop">
+			  <option value="apple">Apple</option>
+			  <option value="asus">Asus</option>
+			  <option value="hp">HP</option>
+			</select>
+			<br>
+		  
+			<label for="age">Age*</label>
+			<input type="number" name="age" id="age" required>
+			<br>
+		  
+			<label for="dob">DOB*</label>
+			<input type="date" name="dob" id="dob" required>
+			<br>
+		  
+			<label for="password">Password*</label>
+			<input type="password" name="password" id="password" required>
+			<br>
+		  
+			<label for="portfolio">Portfolio URL</label>
+			<input type="url" name="portfolio" id="portfolio">
+			<br>
+		  
+			<button type="submit">Submit</button>
+		  </form>
+		  
 	</section>
 </body>
-
 </html>
